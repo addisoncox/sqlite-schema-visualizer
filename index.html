@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sqlite DB Visualizer</title>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://unpkg.com/@hpcc-js/wasm@1.4.1/dist/index.min.js"></script>
+    <script src="https://unpkg.com/d3-graphviz@4.0.0/build/d3-graphviz.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.8.0/sql-wasm.js"></script>
+    <script src="src/relationshipsVisualizer.js"></script>
+
+</head>
+
+<body>
+    <div id="graph"
+        style="text-align: center; width: 1000px; height: 500px; border-style: solid; border-radius: 1px; border-color: black;">
+    </div>
+    <h3>Load a Sqlite.db file</h3>
+    <input id="dbLoader" type="file" accept=".db">
+</body>
+
+</html>
